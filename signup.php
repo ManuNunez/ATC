@@ -11,28 +11,48 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="landpage.html">ATC</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">Log In</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="signup.html">Sign Up</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+			<a class="navbar-brand" href="index.php">ATC</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav ml-auto">
+					<?php
+						$userLoged = 0;
+						if($userLoged == 0)
+						{
+
+					?>
+					<li class="nav-item">
+						<a class="nav-link" href="login.php">Log In</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="signup.php">Sign Up</a>
+					</li>
+					<?php
+						}
+						else{
+
+					?>
+					<li class="nav-item">
+						<a class="nav-link" href="my_profile.php">My profile</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Log out</a>
+					</li>
+					<?php
+						}
+					?>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
     <div class="container">
         <h2>Login</h2>
         <form>

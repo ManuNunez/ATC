@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -12,7 +15,7 @@
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container">
-			<a class="navbar-brand" href="landpage.html">ATC</a>
+			<a class="navbar-brand" href="index.php">ATC</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
 				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -20,16 +23,15 @@
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				<ul class="navbar-nav ml-auto">
 					<?php
-						$userLoged = 0;
-						if($userLoged == 0)
+						if($_SESIONN["logged"])
 						{
 
 					?>
 					<li class="nav-item">
-						<a class="nav-link" href="login.html">Log In</a>
+						<a class="nav-link" href="login.php">Log In</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="signup.html">Sign Up</a>
+						<a class="nav-link" href="signup.php">Sign Up</a>
 					</li>
 					<?php
 						}
@@ -37,10 +39,10 @@
 
 					?>
 					<li class="nav-item">
-						<a class="nav-link" href="my_profile.html">My profile</a>
+						<a class="nav-link" href="my_profile.php">My profile</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="signup.html">Log out</a>
+						<a class="nav-link" href="#">Log out</a>
 					</li>
 					<?php
 						}
@@ -65,9 +67,24 @@
 								<h4 class="card-title">Nombre del Autor</h4>
 								<h6 class="card-subtitle text-muted">TAGS</h6>
 								<p class="card-text">Texto del Post.</p>
+								<?php
+								if($_SESIONN["logged"])
+								{
+			
+								?>
 								<a href="#" class="btn btn-outline-primary">Responder</a>
 								<a href="#" class="btn btn-outline-primary">Solicitar Chat</a>
 								<a href="#" class="btn btn-outline-primary">Guardar Post</a>
+								<?php
+								}
+								else
+								{
+									
+								?>
+								<a href="#" class="btn btn-outline-primary">Login</a>
+								<?php
+								}
+								?>
 							</div>
 						</div>
 					</div>
@@ -78,9 +95,23 @@
 								<h4 class="card-title">Nombre del Autor</h4>
 								<h6 class="card-subtitle text-muted">TAGS</h6>
 								<p class="card-text">Texto del Post.</p>
+								<?php
+								if($_SESIONN["logged"])
+								{
+								?>
 								<a href="#" class="btn btn-outline-primary">Responder</a>
 								<a href="#" class="btn btn-outline-primary">Solicitar Chat</a>
 								<a href="#" class="btn btn-outline-primary">Guardar Post</a>
+								<?php
+								}
+								else
+								{
+									
+								?>
+								<a href="#" class="btn btn-outline-primary">Login</a>
+								<?php
+								}
+								?>
 							</div>
 						</div>
 					</div>
@@ -91,9 +122,24 @@
 								<h4 class="card-title">Nombre del Autor</h4>
 								<h6 class="card-subtitle text-muted">TAGS</h6>
 								<p class="card-text">Texto del Post.</p>
+								<?php
+								if($_SESIONN["logged"])
+								{
+			
+								?>
 								<a href="#" class="btn btn-outline-primary">Responder</a>
 								<a href="#" class="btn btn-outline-primary">Solicitar Chat</a>
 								<a href="#" class="btn btn-outline-primary">Guardar Post</a>
+								<?php
+								}
+								else
+								{
+									
+								?>
+								<a href="#" class="btn btn-outline-primary">Login</a>
+								<?php
+								}
+								?>
 							</div>
 						</div>
 					</div>

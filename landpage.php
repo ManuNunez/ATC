@@ -58,6 +58,7 @@
 								<h4 class="card-title">Nombre del Autor</h4>
 								<h6 class="card-subtitle text-muted">TAGS</h6>
 								<p class="card-text">Texto del Post.</p>
+								<
 								<a href="#" class="btn btn-outline-primary">Responder</a>
 								<a href="#" class="btn btn-outline-primary">Solicitar Chat</a>
 								<a href="#" class="btn btn-outline-primary">Guardar Post</a>
