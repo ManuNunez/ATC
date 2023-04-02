@@ -6,7 +6,26 @@
             "postText" : "",
             "postTag1" : "",
             "postTag2" : "",
-            "answers" : []
+            "answers" : [
+                {
+                    "answerAuthor":"",
+                    "anwerText" : "",
+                    "likes" : 0
+
+                },
+                {
+                    "answerAuthor":"",
+                    "anwerText" : "",
+                    "likes" : 0
+
+                },
+                {
+                    "answerAuthor":"",
+                    "anwerText" : "",
+                    "likes" : 0
+
+                }
+            ]
 
         }
     ]
