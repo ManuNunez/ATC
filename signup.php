@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -21,8 +24,7 @@
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				<ul class="navbar-nav ml-auto">
 					<?php
-						$userLoged = 0;
-						if($userLoged == 0)
+						if($_SESSION["logged"])
 						{
 
 					?>

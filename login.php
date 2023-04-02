@@ -1,17 +1,20 @@
 <?php
+    session_start();
+    $username="";
+if(isset($_GET["username"])){
 $username = $_GET["username"];
 $pwd = $_GET["pwd"];
-echo $username;
-echo $pwd;
+}
+
 if ($username == "manu" && $pwd == "123")
 {
-    session_start();
-    $_SESIONN["logged"] = true;
+    $_SESSION["logged"] = true;
 
-    $_SESIONN["name"] = "manuel";
-    $_SESIONN["email"] = "manu.nunez.2004@gmail.com";
-    $_SESIONN["number"] = 3319907854;
-    $_SESIONN["user_id"] = 001;
+    $_SESSION["name"] = "manuel";
+    $_SESSION["email"] = "manu.nunez.2004@gmail.com";
+    $_SESSION["number"] = 3319907854;
+    $_SESSION["user_id"] = 001;
+    header("Location: index.php");
 
 
 }
@@ -40,8 +43,7 @@ if ($username == "manu" && $pwd == "123")
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				<ul class="navbar-nav ml-auto">
 					<?php
-						$userLoged = 0;
-						if($userLoged == 0)
+						if(!isset($_SESSION["logged"]))
 						{
 
 					?>

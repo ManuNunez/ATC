@@ -1,5 +1,6 @@
 <?php
 session_start();
+print_r($_SESSION);
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,7 +24,7 @@ session_start();
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				<ul class="navbar-nav ml-auto">
 					<?php
-						if($_SESIONN["logged"])
+						if(!isset($_SESSION["logged"]))
 						{
 
 					?>
@@ -42,7 +43,7 @@ session_start();
 						<a class="nav-link" href="my_profile.php">My profile</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Log out</a>
+						<a class="nav-link" href="logout.php">Log out</a>
 					</li>
 					<?php
 						}
@@ -68,7 +69,7 @@ session_start();
 								<h6 class="card-subtitle text-muted">TAGS</h6>
 								<p class="card-text">Texto del Post.</p>
 								<?php
-								if($_SESIONN["logged"])
+								if($_SESSION["logged"])
 								{
 			
 								?>
@@ -96,7 +97,7 @@ session_start();
 								<h6 class="card-subtitle text-muted">TAGS</h6>
 								<p class="card-text">Texto del Post.</p>
 								<?php
-								if($_SESIONN["logged"])
+								if($_SESSION["logged"])
 								{
 								?>
 								<a href="#" class="btn btn-outline-primary">Responder</a>
@@ -123,7 +124,7 @@ session_start();
 								<h6 class="card-subtitle text-muted">TAGS</h6>
 								<p class="card-text">Texto del Post.</p>
 								<?php
-								if($_SESIONN["logged"])
+								if($_SESSION["logged"])
 								{
 			
 								?>
