@@ -1,32 +1,7 @@
-{
-    "posts" :[
-        {
-            "postId": 0 ,
-            "postAuthor" : "manu",
-            "postText" : "",
-            "postTag1" : "",
-            "postTag2" : "",
-            "answers" : [
-                {
-                    "answerAuthor":"",
-                    "anwerText" : "",
-                    "likes" : 0
-
-                },
-                {
-                    "answerAuthor":"",
-                    "anwerText" : "",
-                    "likes" : 0
-
-                },
-                {
-                    "answerAuthor":"",
-                    "anwerText" : "",
-                    "likes" : 0
-
-                }
-            ]
-
-        }
-    ]
-}
+[
+    {
+        "postAuthor": "manuel",
+        "postTags": "PYTHON",
+        "postText": "12121\r\n\t\t\t\t\t"
+    }
+]

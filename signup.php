@@ -68,6 +68,10 @@ session_start();
                 <input type="text" class="form-control" id="username" placeholder="Ingrese su correo electronico"
                     name="username">
             </div>
+			<div class="form-group">
+                <label for="pwd">Numero de telefono:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Ingrese su número de telefono" name="pwd">
+            </div>
             <div class="form-group">
                 <label for="pwd">Contraseña:</label>
                 <input type="password" class="form-control" id="pwd" placeholder="Confirme su contraseña" name="pwd">
