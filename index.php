@@ -139,7 +139,7 @@ if (isset($_GET["post-content"])) {
 				<h2>Mas opciones</h2>
 				<ul class="list-group">
 					<li class="list-group-item">Filtrar por tags</li>
-					<li class="list-group-item">Buscar Grupo de Estudio</li>
+					<li class="list-group-item"><a href = "/study_groups.php"> Grupo de Estudio</a></li>
 				</ul>
 			</div>
 		</div>

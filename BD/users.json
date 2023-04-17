@@ -3,6 +3,7 @@
         "pwd": "123",
         "mail": "manu.nunez.2004@gmail.com",
         "profilePhoto": "",
+        "description" : "",
         "tag1": "PYTHON",
         "tag2": "LOGICA",
         "tag3": "EXPRESION ORAL Y ESCRITA"
@@ -11,8 +12,29 @@
         "pwd": "123",
         "mail": "manu.nunez.2004@gmail.com",
         "profilePhoto": "",
+        "description" : "",
         "tag1": "PYTHON",
         "tag2": "LOGICA",
         "tag3": "EXPRESION ORAL Y ESCRITA"
+    },
+    "erick" : {
+        "pwd": "123",
+        "mail": "",
+        "profilePhoto": "",
+        "description" : "",
+        "tag1": "PYTHON",
+        "tag2": "LOGICA",
+        "tag3": "EXPRESION ORAL Y ESCRITA"
+
+    },
+    "gael" : {
+        "pwd": "123",
+        "mail": "",
+        "profilePhoto": "",
+        "description" : "",
+        "tag1": "PYTHON",
+        "tag2": "LOGICA",
+        "tag3": "EXPRESION ORAL Y ESCRITA"
+
     }
 }

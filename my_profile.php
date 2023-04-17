@@ -1,3 +1,12 @@
+<?php
+session_start();
+$username = "";
+
+$json_users = file_get_contents('BD/users.json');
+$users = json_decode($json_users, true);
+
+?>
+
 <!DOCTYPE html>
 <html>
 
