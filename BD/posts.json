@@ -1,6 +1,10 @@
 [
     {
         "postAuthor": "manuel",
+        "postText": "asdasda"
+    },
+    {
+        "postAuthor": "manuel",
         "postTags": "PYTHON",
         "postText": "12121\r\n\t\t\t\t\t"
     }

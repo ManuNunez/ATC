@@ -1,10 +1,18 @@
 {
     "manu": {
-            "pwd" : "123",
-            "mail" : "manu.nunez.2004@gmail.com",
-            "profilePhoto" : "",
-            "tag1" : "PYTHON",
-            "tag2" : "LOGICA",
-            "tag3" : "EXPRESION ORAL Y ESCRITA"
+        "pwd": "123",
+        "mail": "manu.nunez.2004@gmail.com",
+        "profilePhoto": "",
+        "tag1": "PYTHON",
+        "tag2": "LOGICA",
+        "tag3": "EXPRESION ORAL Y ESCRITA"
+    },
+    "rzl": {
+        "pwd": "123",
+        "mail": "manu.nunez.2004@gmail.com",
+        "profilePhoto": "",
+        "tag1": "PYTHON",
+        "tag2": "LOGICA",
+        "tag3": "EXPRESION ORAL Y ESCRITA"
     }
 }
