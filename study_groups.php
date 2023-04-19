@@ -1,3 +1,12 @@
+<?php
+session_start();
+$json_groups = file_get_contents('BD/study_groups.json');
+$groups = json_decode('BD/study_groups.json', true);
+
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -49,16 +58,40 @@
             </div>
         </div>
     </nav>
+    <?php
+    for ($m = 0; $m < count($groups); $m++) {
+        $group = (object)($groups[$m])
 
-    <div>
-        <h1>ESTAMOS TRABAJANDO EN ESTO</h1>
-    </div>
+
+    ?>
+        <div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-4">
+                        <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="Card image">
+                        <div class="card-body">
+                            <h5 class="card-title"><?= $group -> title?></h5>
+                            <p class="card-text">
+                                <?= $group-> description?>
+                                <ul>
+                                    <li>fundador: <?= $group -> founder?></li>
+                                    <li>contacto : <?= $group -> contact?></li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <?php
+    }
+    ?>
 
 
-    <!-- Bootstrap JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    < <!-- Bootstrap JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </body>
 

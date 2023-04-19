@@ -58,8 +58,11 @@ $users = json_decode($json_users, true);
             </div>
         </div>
     </nav>
+    <div class="container">
+        <h2>My profile</h2>
 
-
+        <div>
+    </div>
 
     <!-- Bootstrap JavaScript -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
