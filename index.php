@@ -123,7 +123,7 @@
 										} else {
 
 										?>
-											<a href="#" class="btn btn-outline-primary">Login</a>
+											<a href="#" class="btn btn-outline-primary" href = "login.php">Login</a>
 										<?php
 										}
 										?>
@@ -139,7 +139,7 @@
 				<h2>Mas opciones</h2>
 				<ul class="list-group">
 					<li class="list-group-item">Filtrar por tags</li>
-					<li class="list-group-item"><a href = "/study_groups.php"> Grupo de Estudio</a></li>
+					<li class="list-group-item"><a href = "study_groups.php"> Grupo de Estudio</a></li>
 				</ul>
 			</div>
 		</div>
