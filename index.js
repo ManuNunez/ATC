@@ -15,3 +15,8 @@ function savePost()
 {
     $("#new-post").submit();
 }
+
+function workingOnThis()
+{
+    alert("ESTAMOS TRABAJANDO EN ESTA FUNCIONALIDAD, AGRADECEMOS LA PACIENCIA");
+}
