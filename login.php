@@ -14,7 +14,7 @@ if (isset($_GET["username"]) && isset($_GET["pwd"])) {
 			// La contraseña coincide, se inicia sesión
 			$_SESSION["logged"] = true;
 			$_SESSION["username"] = $username;
-			header("Location: my_profile.php");
+			header("Location: index.php");
 			exit();
 		}
 		else 

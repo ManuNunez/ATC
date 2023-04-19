@@ -9,7 +9,7 @@
 	if (isset($_GET["post-content"])) {
 
 		$post = [];
-		$post["postAuthor"] = $_SESSION["name"];
+		$post["postAuthor"] = $_SESSION["username"];
 		$post["postText"] = $_GET["post-content"];
 		$post["postText"] = $_GET["post-content"];
 		array_unshift($posts, $post);
