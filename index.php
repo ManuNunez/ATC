@@ -138,8 +138,8 @@
 			<div class="col-md-3">
 				<h2>Mas opciones</h2>
 				<ul class="list-group">
-					<li class="list-group-item">Filtrar por tags</li>
-					<li class="list-group-item"><a href = "study_groups.php"> Grupo de Estudio</a></li>
+					<a href="#" onclick="workingOnThis()"><li class="list-group-item">Filtrar por tags</li></a>
+					<a href = "study_groups.php"><li class="list-group-item"> Grupo de Estudio</li></a>
 				</ul>
 			</div>
 		</div>
