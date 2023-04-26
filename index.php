@@ -112,48 +112,55 @@
 
 										?>
 											<a href="#" class="btn btn-outline-primary" onclick="showAnswerControls(<?= $i ?>)">Responder</a>
-											<div class="answer" id="text-area-<?= $i ?>" style="display:none;">
+											<div class="answer" id="post-text-area" style="display:none;">
+												<form id="new-post" action="index.php">
+													<div class="form-floating mb-3">
+														<textarea class="form-control" name="post-content" placeholder="Escribe tu respuesta aquí"></textarea>
+														<>
+													</div>
 
-												<textarea>
-
-											</textarea>
-											</div>
-											<a href="https://wa.me/+523319907854?text=Hola%2C%20responde" class="btn btn-outline-primary">Solicitar Chat</a>
-										<?php
+													<button class="btn btn-primary" onclick="saveAsnwer();">Guardar</button>
+												</form>
+												<a href="https://wa.me/+523319907854?text=Hola%2C%20responde" class="btn btn-outline-primary">Solicitar Chat</a>
+											<?php
 										} else {
 
-										?>
-											<a href="#" class="btn btn-outline-primary" href = "login.php">Login</a>
-										<?php
+											?>
+												<a href="#" class="btn btn-outline-primary" href="login.php">Login</a>
+											<?php
 										}
-										?>
+											?>
+											</div>
 									</div>
 								</div>
+							<?php
+						}
+							?>
 							</div>
-					<?php
-					}
-					?>
+					</div>
+					<div class="col-md-3">
+						<h2>Mas opciones</h2>
+						<ul class="list-group">
+							<a href="#" onclick="workingOnThis()">
+								<li class="list-group-item">Filtrar por tags</li>
+							</a>
+							<a href="study_groups.php">
+								<li class="list-group-item"> Grupo de Estudio</li>
+							</a>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<div class="col-md-3">
-				<h2>Mas opciones</h2>
-				<ul class="list-group">
-					<a href="#" onclick="workingOnThis()"><li class="list-group-item">Filtrar por tags</li></a>
-					<a href = "study_groups.php"><li class="list-group-item"> Grupo de Estudio</li></a>
-				</ul>
-			</div>
-		</div>
-	</div>
 
 
 
 
 
-	<!-- Bootstrap JavaScript -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+			<!-- Bootstrap JavaScript -->
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-</body>
+	</body>
 
-</html>
+	</html>

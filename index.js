@@ -16,6 +16,11 @@ function savePost()
     $("#new-post").submit();
 }
 
+function saveAnswer()
+{
+    
+}
+
 function workingOnThis()
 {
     window.alert("ESTAMOS TRABAJANDO EN ESTA FUNCIONALIDAD, AGRADECEMOS LA PACIENCIA");

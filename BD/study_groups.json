@@ -1,7 +1,16 @@
 [
     {
+        "image": "default",
         "founder" : "Manuel",
         "title" : "introducción a python",
+        "description" : "Este es un grupo para personas que son nuevas en python",
+        "contact":"group-link",
+        "days":"lunes y miercoles"
+    },
+    {
+        "image": "default",
+        "founder" : "Manuel",
+        "title" : "introducción a svelte",
         "description" : "Este es un grupo para personas que son nuevas en python",
         "contact":"group-link",
         "days":"lunes y miercoles"

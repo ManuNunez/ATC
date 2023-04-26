@@ -1,9 +1,7 @@
 <?php
 session_start();
 $json_groups = file_get_contents('BD/study_groups.json');
-$groups = json_decode('BD/study_groups.json', true);
-
-
+$groups = json_decode($json_groups, true);
 ?>
 
 
@@ -11,7 +9,7 @@ $groups = json_decode('BD/study_groups.json', true);
 <html>
 
 <head>
-    <title>My profile</title>
+    <title>Study Groups</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/simplex/bootstrap.min.css" integrity="sha384-FYrl2Nk72fpV6+l3Bymt1zZhnQFK75ipDqPXK0sOR0f/zeOSZ45/tKlsKucQyjSp" crossorigin="anonymous">
@@ -58,34 +56,49 @@ $groups = json_decode('BD/study_groups.json', true);
             </div>
         </div>
     </nav>
-    <?php
-    for ($m = 0; $m < count($groups); $m++) {
-        $group = (object)($groups[$m])
+    <div class="container-fluid">
+        <?php
+        for ($m = 0; $m < count($groups); $m++) {
+            $group = (object)($groups[$m])
 
 
-    ?>
-        <div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card mb-4">
-                        <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="Card image">
-                        <div class="card-body">
-                            <h5 class="card-title"><?= $group -> title?></h5>
-                            <p class="card-text">
-                                <?= $group-> description?>
+        ?>
+            <div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card mb-4">
+                            <?php
+                            if ($group->image = "default") {
+                            ?>
+
+                                <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="Card image">
+
+                            <?php
+                            } else {
+                            ?>
+                                <img src=<?=$group->image?> class="card-img-top" alt="Card image">
+                            <?php
+                            }
+                            ?>
+                            <div class="card-body">
+                                <h5 class="card-title"><?= $group->title ?></h5>
+                                <p class="card-text">
+                                    <?= $group->description ?>
                                 <ul>
-                                    <li>fundador: <?= $group -> founder?></li>
-                                    <li>contacto : <?= $group -> contact?></li>
+                                    <li>fundador: <?= $group->founder ?></li>
+                                    <li>contacto : <?= $group->contact ?></li>
+                                    <li>Horarios : <?= $group->days ?></li>
                                 </ul>
-                            </p>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    <?php
-    }
-    ?>
+        <?php
+        }
+        ?>
+    </div>
 
 
     < <!-- Bootstrap JavaScript -->
