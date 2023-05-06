@@ -1,31 +1,14 @@
 [
     {
-        "postAuthor": "manu",
-        "postText": "ashdahshda"
+        "postAuthor": "gael",
+        "postText": "como se usa la recursividad ??"
+    },
+    {
+        "postAuthor": "erick",
+        "postText": "Como se hace una funcion en Python?"
     },
     {
         "postAuthor": "manu",
-        "postText": "ashdahshda"
-    },
-    {
-        "postAuthor": "manu",
-        "postText": "ashdahshda"
-    },
-    {
-        "postAuthor": "manu",
-        "postText": "kkdkkehd"
-    },
-    {
-        "postAuthor": "manu",
-        "postText": "kkdkkehd"
-    },
-    {
-        "postAuthor": "manu",
-        "postText": "masda"
-    },
-    {
-        "postAuthor": "manuel",
-        "postTags": "PYTHON",
-        "postText": "12121\r\n\t\t\t\t\t"
+        "postText": "¿Alguien sabe que es un conjunto y cuales son las operaciones de conjuntos?"
     }
 ]

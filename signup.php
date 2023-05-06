@@ -97,7 +97,7 @@ if(isset($_POST['submit'])){
 		</div>
 	</nav>
 	<div class="container">
-		<h2>Login</h2>
+		<h2>SIGN UP</h2>
 		<form method="post" action="new_user.php">
 			<form method="POST" action="guardar_usuario.php">
 				<div class="form-group">

@@ -1,3 +1,11 @@
+
+<?php
+session_start();
+$json_groups = file_get_contents('BD/study_groups.json');
+$groups = json_decode($json_groups, true);
+?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -49,6 +57,81 @@
             </div>
         </div>
     </nav>
+    <div class="container">
+		<h2>Login</h2>
+		<form method="post" action="new_user.php">
+			<form method="POST" action="guardar_usuario.php">
+				<div class="form-group">
+					<label for="username">Fundador del grupo de estudio : </label>
+					<input type="text" class="form-control" id="founder" placeholder="Ingrese su nombre de usuario" name="username">
+				</div>
+				<div class="form-group">
+					<label for="name">Titulo del grupo : </label>
+					<input type="text" class="form-control" id="title" placeholder="Ingrese su nombre completo" name="name">
+				</div>
+				<div class="form-group">
+					<label for="email">Descripcion : </label>
+                    <div>
+					<textarea type="text" class="form-control" id="email" placeholder="Ingrese su correo electronico" name="email"> </textarea>
+                </div>
+                </div>
+				<div class="form-group">
+					<label for="phone">Numero de telefono:</label>
+					<input type="text" class="form-control" id="phone" placeholder="Ingrese su número de telefono" name="phone">
+				</div>
+				<div class="form-group">
+					<label for="pwd">Contraseña:</label>
+					<input type="password" class="form-control" id="pwd" placeholder="Ingrese su contraseña" name="pwd">
+				</div>
+				<div class="form-group">
+					<label for="pwd-confirm">Confirmar Contraseña:</label>
+					<input type="password" class="form-control" id="pwd-confirm" placeholder="Confirme su contraseña" name="pwd-confirm">
+				</div>
+				<div class="form-group">
+					<label for="tags1">Etiqueta 1:</label>
+					<select class="form-control" id="tags1" name="tags1">
+						<?php
+						// Leer la lista de tags desde el archivo JSON
+						$tags = json_decode(file_get_contents('tags.json'), true);
+						// Crear un option para cada tag
+						foreach ($tags as $tag) {
+							echo "<option value=\"$tag\">$tag</option>";
+						}
+						?>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="tags2">Etiqueta 2:</label>
+					<select class="form-control" id="tags2" name="tags2">
+						<?php
+						// Leer la lista de tags desde el archivo JSON
+						$tags = json_decode(file_get_contents('tags.json'), true);
+						// Crear un option para cada tag
+						foreach ($tags as $tag) {
+							echo "<option value=\"$tag\">$tag</option>";
+						}
+						?>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="tags3">Etiqueta 3:</label>
+					<select class="form-control" id="tags3" name="tags3">
+						<?php
+						// Leer la lista de tags desde el archivo JSON
+						$tags = json_decode(file_get_contents('tags.json'), true);
+						// Crear un option para cada tag
+						foreach ($tags as $tag) {
+							echo "<option value=\"$tag\">$tag</option>";
+						}
+						?>
+					</select>
+				</div>
+				<button type="submit" class="btn btn-outline-primary">Ingresar</button>
+			</form>
+	</div>
+    <!-- Enlace a jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <!-- Bootstrap JavaScript -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>

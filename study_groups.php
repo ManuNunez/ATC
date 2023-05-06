@@ -57,12 +57,17 @@ $groups = json_decode($json_groups, true);
         </div>
     </nav>
     <div class="container-fluid">
+        
+            <br>
+            <a href="new_study_group.php" class="btn btn-outline-primary">Nuevo grupo de Estudio</a>
+
         <?php
         for ($m = 0; $m < count($groups); $m++) {
             $group = (object)($groups[$m])
 
 
         ?>
+        <br>
             <div>
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-12">
@@ -76,7 +81,7 @@ $groups = json_decode($json_groups, true);
                             <?php
                             } else {
                             ?>
-                                <img src=<?=$group->image?> class="card-img-top" alt="Card image">
+                                <img src=<?= $group->image ?> class="card-img-top" alt="Card image">
                             <?php
                             }
                             ?>
